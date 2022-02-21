@@ -1,5 +1,6 @@
 #include "SeekComponent.h"
 
-SeekComponent::SeekComponent(const char m_target)
+SeekComponent::SeekComponent(Actor m_agent, const char m_target)
 {
 }
+
