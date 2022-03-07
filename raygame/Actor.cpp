@@ -52,6 +52,8 @@ Component* Actor::addComponent(Component* component)
     m_components = appendedArray;    
     m_componentCount++;
 
+    onAddComponent(component);
+
     return component;
 }
 
