@@ -4,7 +4,11 @@
 
 void Agent::start()
 {
+	Actor::start();
+
 	m_moveComponent = getComponent<MoveComponent>();
+	m_moveComponent->setMaxSpeed(500);
+	m_moveComponent->setUpdateFacing(true);
 }
 
 void Agent::update(float deltaTime)
@@ -12,7 +16,7 @@ void Agent::update(float deltaTime)
 	//GEt all force being applied from steering behaviours
 	for (int i = 0; i < m_steeringComponents.getLength(); i++)
 	{
-		m_force = m_force + m_steeringComponents[i].calculateForce();
+		m_force = m_force + m_steeringComponents[i]->calculateForce();
 	}
 
 	//Clamp force if it exceeds the maximum scale

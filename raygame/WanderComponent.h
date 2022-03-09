@@ -1,24 +1,21 @@
 #pragma once
-#include "Component.h"
+#include "SteeringComponent.h"
 #include <Vector2.h>
 #include "MoveComponent.h"
 
 class WanderComponent :
-	public Component
+	public SteeringComponent
 {
 public:
-	WanderComponent(const char* name = "WanderComponent") : Component::Component(name){}
-	WanderComponent(Actor* agent, int point, MoveComponent* movecomponent, const char* name = "WanderComponent");
-
-	void update(float deltaTime) override;
+	WanderComponent(float circleDistance, float circleRadius, float wanderForce);
+	MathLibrary::Vector2 calculateForce() override;
 
 private:
-	Actor* m_agent;
-	int m_point;
-	MoveComponent* m_movecomponent;
-	MathLibrary::Vector2 m_desiredVelocity;
-	MathLibrary::Vector2 m_steeringForce;
-	MathLibrary::Vector2 m_currentVelocity;
-	float m_seekForce = 86;
+	float m_circleDistance = 0;
+	float m_circleRadius = 0;
+	float m_wanderAngle = 0;
+
+	MathLibrary::Vector2 m_target;//Makes m_target a vector 2
+	MathLibrary::Vector2 m_circlePos;
 };
 

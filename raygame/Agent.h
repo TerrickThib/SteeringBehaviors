@@ -2,6 +2,7 @@
 #include "Actor.h"
 #include "ActorArray.h"
 #include "raymath.h"
+#include "Transform2D.h"
 
 class SteeringComponent;
 class MoveComponent;
