@@ -2,7 +2,6 @@
 #include "Transform2D.h"
 #include <string.h>
 #include "Engine.h"
-#include <exception>
 
 Scene::Scene()
 {
@@ -29,7 +28,7 @@ void Scene::addUIElement(Actor* actor)
 
 bool Scene::removeUIElement(int index)
 {
-    return m_UIElements.removeItem(index);
+    return m_UIElements.removeItem(m_actors.getItem(index));
 }
 
 bool Scene::removeUIElement(Actor* actor)
@@ -50,12 +49,17 @@ void Scene::addActor(Actor* actor)
 
 bool Scene::removeActor(int index)
 {
-    return m_actors.removeItem(index);
+    return m_actors.removeItem(m_actors.getItem(index));
 }
 
 bool Scene::removeActor(Actor* actor)
 {
     return m_actors.removeItem(actor);
+}
+
+Actor* Scene::getActor(int index)
+{
+    return m_actors.getItem(index);
 }
 
 void Scene::start()

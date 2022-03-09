@@ -2,6 +2,7 @@
 #include "Actor.h"
 class InputComponent;
 class MoveComponent;
+class SpriteComponent;
 
 class Player :
 	public Actor
@@ -15,6 +16,6 @@ public:
 private:
 	InputComponent* m_inputComponent;
 	MoveComponent* m_moveComponent;
-
+	SpriteComponent* m_spriteComponent;
 };
 
