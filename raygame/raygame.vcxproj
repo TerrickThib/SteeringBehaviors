@@ -149,9 +149,11 @@
     <ClCompile Include="AABBCollider.cpp" />
     <ClCompile Include="Actor.cpp" />
     <ClCompile Include="Agent.cpp" />
+    <ClCompile Include="BooleanDecision.cpp" />
     <ClCompile Include="CircleCollider.cpp" />
     <ClCompile Include="Collider.cpp" />
     <ClCompile Include="Component.cpp" />
+    <ClCompile Include="Decision.cpp" />
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="FleeComponent.cpp" />
     <ClCompile Include="InputComponent.cpp" />
@@ -171,9 +173,11 @@
     <ClInclude Include="Actor.h" />
     <ClInclude Include="ActorArray.h" />
     <ClInclude Include="Agent.h" />
+    <ClInclude Include="BooleanDecision.h" />
     <ClInclude Include="CircleCollider.h" />
     <ClInclude Include="Collider.h" />
     <ClInclude Include="Component.h" />
+    <ClInclude Include="Decision.h" />
     <ClInclude Include="Engine.h" />
     <ClInclude Include="FleeComponent.h" />
     <ClInclude Include="InputComponent.h" />

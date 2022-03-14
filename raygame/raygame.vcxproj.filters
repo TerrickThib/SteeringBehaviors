@@ -74,6 +74,12 @@
     <ClCompile Include="StateMachineComponent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Decision.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BooleanDecision.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene.h">
@@ -134,6 +140,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="StateMachineComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Decision.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BooleanDecision.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

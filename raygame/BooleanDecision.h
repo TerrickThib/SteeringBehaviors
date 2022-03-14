@@ -26,7 +26,7 @@ public:
 	virtual bool checkCondition(Agent* agent, float deltaTime) { return false; }
 
 private:
-	Decision* m_left;
-	Decision* m_right;
+	Decision* m_no;
+	Decision* m_yes;
 };
 
