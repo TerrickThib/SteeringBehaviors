@@ -8,6 +8,8 @@ class BooleanDecision :
 	public Decision
 {
 public:
+	/// <param name="leftChild"></param>
+	/// <param name="rightChild"></param>
 	BooleanDecision(Decision* leftChild = nullptr, Decision* rightChild = nullptr);
 
 	/// <summary>

@@ -11,6 +11,7 @@ class Agent :
 	public Actor
 {
 public:
+	Agent(float x, float y, const char* name, float maxForce, float maxSpeed);
 	void start() override;
 	void update(float deltaTime) override;
 	void onAddComponent(Component* component) override;
